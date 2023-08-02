@@ -31,13 +31,20 @@
             <tr>
                 <td class="auto-style3">Audience</td>
                 <td class="auto-style5">
-                    <asp:TextBox ID="txtAudience" runat="server" Width="208px"></asp:TextBox>
-                </td>
+                    <select id="audience" name="D1" runat="server">
+                        <option>MBA Class of 2024</option>
+                        <option>MBA Class of 2025</option>
+                        <option>MBA 2025 Admit Round 1</option>
+                        <option>MBA 2025 Admit Round 2</option>
+                        <option>MBA 2025 Admit Round 3</option>
+                        <option>MSx 2024</option>
+                        <option>MSx 2024 Admit</option>
+                    </select></td>
             </tr>
             <tr>
-                <td class="auto-style4">Year</td>
+                <td class="auto-style4">Matching Template</td>
                 <td class="auto-style2">
-                    <asp:TextBox ID="txtYear" runat="server" Width="210px"></asp:TextBox>
+                    <asp:Label ID="lblTemplatePath" runat="server"></asp:Label>
                 </td>
             </tr>
             <tr>

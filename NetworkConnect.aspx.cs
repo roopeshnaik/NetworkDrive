@@ -1,52 +1,79 @@
 ﻿using System;
 using System.Configuration;
 using System.IO;
+using System.Linq;
 
 namespace NetworkDrive
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
+        string networkDrive = ConfigurationManager.AppSettings["templateLocation"];
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        public string GetTemplateFile(string audience, string studentYear)
+        private string GetTemplateHtml(string path)
         {
-            string networkDrive = ConfigurationManager.AppSettings["templateLocation"];
-            string searchString = audience + studentYear;
-            string templatePath = "Template file not found";
-            if (Directory.Exists(networkDrive))
+            string templateHtml = "<html><body>Default Text...</body></html>";
+            if (File.Exists(path))
             {
-                string[] files = Directory.GetFiles(networkDrive);
-                foreach (string filePath in files)
-                {
-                    string fileName = Path.GetFileName(filePath);
-                    if (fileName.Contains(searchString))
-                    {
-                        // File name matches the search string.
-                        templatePath = fileName;
-                    }
-                }
+                templateHtml = File.ReadAllText(path);
             }
-            else
-            {
-                templatePath = "Network drive not available";
-            }
-
-            return templatePath;
-        }
+            return templateHtml;
+        } 
 
         protected void findTemplate_Click(object sender, EventArgs e)
         {
             try
             {
-                message.Text = GetTemplateFile(txtAudience.Text, txtYear.Text);
+                lblTemplatePath.Text = FindMatchingTemplate(audience.Items[audience.SelectedIndex].Value);
+                message.Text = GetTemplateHtml(FindMatchingTemplate(audience.Items[audience.SelectedIndex].Value));
             }
             catch (Exception ex)
             {
                 message.Text = ex.Message;
             }
+        }
+
+        private string FindMatchingTemplate(string audience)
+        {
+            // Create array of search words for pattern matching.
+            string[] searchWords = audience.Split(' ');
+            string fileWithMaxMatches = string.Empty;
+
+            if (Directory.Exists(networkDrive))
+            {
+                // Get the list of files from the target directory.
+                string[] files = Directory.GetFiles(networkDrive);
+
+
+                // Filter files that contain all the search words.
+                var matchingFiles = files.Where(file =>
+                    searchWords.Any(word => Path.GetFileNameWithoutExtension(file).Contains(word))
+                );
+
+                // Find the file with the most word matches.
+                int maxMatchCount = 0;
+
+                foreach (var file in matchingFiles)
+                {
+                    int matchCount = searchWords.Count(word =>
+                        Path.GetFileNameWithoutExtension(file).Contains(word)
+                    );
+
+                    if (matchCount > maxMatchCount)
+                    {
+                        maxMatchCount = matchCount;
+                        fileWithMaxMatches = file;
+                    }
+                }
+            }
+            else
+            {
+                fileWithMaxMatches = "Network drive not available";
+            }
+            return fileWithMaxMatches;
         }
     }
 }
