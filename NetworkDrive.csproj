@@ -71,6 +71,8 @@
     <Content Include="NetworkConnect.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Audience.cs" />
+    <Compile Include="Util.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="NetworkConnect.aspx.cs">
       <DependentUpon>NetworkConnect.aspx</DependentUpon>
