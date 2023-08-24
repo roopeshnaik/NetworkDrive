@@ -1,0 +1,849 @@
+${header_start}
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!-- If you delete this meta tag, the ground will open and swallow you. -->
+    <meta name="viewport" content="width=device-width" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>MSX Admit Digest</title>
+    <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+    <style type="text/css">
+        /* -------------------------------------
+                GLOBAL
+        ------------------------------------- */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            font-family: "Source Sans Pro", sans-serif;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        body {
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-size-adjust: none;
+            width: 100% !important;
+            height: 100%;
+        }
+
+
+        /* -------------------------------------
+                ELEMENTS
+        ------------------------------------- */
+        a {
+            color: #2BA6CB;
+        }
+
+        /* -------------------------------------
+                HEADER
+        ------------------------------------- */
+        table.head-wrap {
+            width: 100%;
+        }
+
+        .header.container table td.logo {
+            padding: 15px;
+        }
+
+        .header.container table td.label {
+            padding: 15px;
+            padding-left: 0px;
+        }
+
+        .header .header-date {
+            color: #585754;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+        }
+
+        .header .heading-second {
+            color: rgba(255, 255, 255, 1);
+            text-align: center;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 28px; /* 116.667% */
+        }
+
+        .header .heading-second-content1 {
+            padding: 20px 0 12px 0;
+        }
+
+        .header .heading-second-content2 {
+            padding: 0 0 20px 0;
+        }
+
+        .header heading-second-content2 table {
+            width: 100%;
+        }
+
+            .header heading-second-content2 table td.left-setion {
+                float: left;
+            }
+
+        .header .heading-second-content2 table td.right-section {
+            float: right;
+            padding-right: 0;
+        }
+
+            .header .heading-second-content2 table td.right-section img {
+                float: right;
+                padding-left: 8px;
+            }
+
+            .header .heading-second-content2 table td.right-section a {
+                text-decoration: none;
+            }
+
+        .header .heading-second-content2 tr td {
+            color: #FFF;
+            padding: 4px;
+        }
+
+            .header .heading-second-content2 tr td:first-child {
+                padding-left: 0;
+            }
+
+        .header .heading-second-content2 .border-right {
+            border-right: 2px solid #2E2D29;
+        }
+
+        .header .heading-second-content2 tr td a {
+            color: #FFF;
+        }
+
+        .header .divider-black {
+            border-bottom: 2px solid #2E2D29;
+            padding-bottom: 12px;
+        }
+        /* -------------------------------------
+                BODY
+        ------------------------------------- */
+        table.body-wrap {
+            width: 100%;
+        }
+
+
+        /* -------------------------------------
+                FOOTER
+        ------------------------------------- */
+        table.footer-wrap {
+            width: 100%;
+            clear: both !important;
+        }
+
+        .footer-wrap .container td.content p {
+            border-top: 1px solid rgb(215,215,215);
+            padding-top: 15px;
+        }
+
+        .footer-wrap .container td.content p {
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        .footer-wrap .footer-container {
+            padding: 24px;
+            border-top: 1px solid #D5D5D4;
+            background: #F4F4F4;
+            color: #2E2D29;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 16px; /* 114.286% */
+        }
+
+            .footer-wrap .footer-container div {
+                padding-bottom: 4px;
+            }
+
+            .footer-wrap .footer-container a {
+                color: #8C1515;
+                text-decoration: none;
+            }
+        /* -------------------------------------
+                TYPOGRAPHY
+        ------------------------------------- */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Source Sans Pro", 'helvetica neue', sans-serif;
+            line-height: 1.1;
+            margin-bottom: 15px;
+            color: #000;
+        }
+
+        .main-heading {
+            color: #2E2D29;
+            font-family: Source Sans Pro;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px; /* 100% */
+            letter-spacing: -0.96px;
+        }
+
+        p, ul {
+            margin-bottom: 10px;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+            ul li {
+                margin-left: 5px;
+                list-style-position: inside;
+            }
+
+
+        /* ---------------------------------------------------
+                RESPONSIVENESS
+        ------------------------------------------------------ */
+
+        /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+        .container {
+            display: block !important;
+            max-width: 1100px !important;
+            margin: 0 auto !important; /* makes it centered */
+            clear: both !important;
+        }
+
+        .subheading {
+            padding: 0 !important;
+            color: #2E2D29;
+            font-family: Source Sans Pro;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px;
+        }
+
+        .card-content {
+            padding: 12px 16px;
+        }
+
+            .card-content p {
+                color: #585754;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px; /* 142.857% */
+            }
+
+            .card-content a {
+                color: #8C1515;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+                text-decoration-line: underline;
+            }
+
+            .card-content strong {
+                color: #585754;
+                /* Body/Body 3 Bold */
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 16px;
+            }
+
+        .card-from, .card-location {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16px;
+            padding: 0px 16px 12px 16px;
+        }
+
+            .card-from img, .card-location img {
+                padding-right: 8px;
+            }
+
+            .card-form a, .card-location a {
+                color: #8C1515;
+            }
+
+        /* This should also be a block element, so that it will fill 100% of the .container */
+        .content {
+            padding: 15px;
+            max-width: 1100px;
+            margin: 0 auto;
+            display: block;
+        }
+
+            /* Let's make sure tables in the content area are 100% wide */
+            .content table {
+                width: 100%;
+            }
+
+
+        /* Odds and ends */
+        .column {
+            width: 300px;
+            float: left;
+        }
+
+            .column tr td {
+                padding: 15px;
+            }
+
+        .column-wrap {
+            padding: 0 !important;
+            margin: 0 auto;
+            max-width: 640px !important;
+        }
+
+        .column table {
+            width: 100%;
+        }
+
+        .social .column {
+            width: 280px;
+            min-width: 279px;
+            float: left;
+        }
+
+        /* Blocks for deadlines */
+        .message {
+            border-radius: 8px;
+            border: 1px solid rgba(213, 213, 212, 1);
+            background: #FFF;
+            margin-bottom: 12px;
+            width: 100%;
+        }
+
+        .card {
+            padding: 12px 16px 12px 16px;
+        }
+
+        .message-card-content .card-title {
+            color: #00548F;
+            font-family: Source Sans Pro;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px;
+            padding: 0px 16px 12px 16px;
+        }
+
+
+        .message-card-content .card-content {
+            border-top: 1px solid #D5D5D4;
+        }
+
+            .message-card-content .card-content p {
+                color: #585754;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px; /* 142.857% */
+            }
+
+                .message-card-content .card-content p a {
+                    color: #8C1515;
+                    text-decoration: underline;
+                }
+
+            .message-card-content .card-content ul li {
+                color: #585754;
+                font-family: Source Sans Pro;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px; /* 142.857% */
+            }
+
+        .message-card-content .card-email {
+            padding: 0px 16px 12px 16px;
+        }
+
+            .message-card-content .card-email a {
+                color: #8C1515;
+                font-family: Source Sans Pro;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 16px; /* 133.333% */
+                text-decoration-line: underline;
+            }
+
+        .calendar {
+            border-radius: 8px;
+            background: #FFF;
+            /*box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.10);*/
+            border: 2px solid rgba(0, 0, 0, 0.10);
+            padding: 12px;
+            color: #2E2D29;
+            font-family: Source Sans Pro;
+            font-style: normal;
+            width: auto !important;
+        }
+
+        .add-time {
+            color: #585754;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16px;
+            text-decoration: none;
+        }
+
+        .add-to-calendar a {
+            color: #8C1515;
+            font-family: Source Sans Pro;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 16px; /* 114.286% */
+            text-decoration-line: underline;
+        }
+
+        /* Be sure to place a .clear element after each set of columns, just to be safe */
+        .clear {
+            display: block;
+            clear: both;
+        }
+
+
+        @media only screen and (max-width: 600px) {
+
+            .footer-wrap .footer-container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+
+    <!-- HEADER -->
+    <table class="head-wrap" bgcolor="#fff">
+        <tr>
+            <td></td>
+            <td class="header container">
+                <!-- /content -->
+                <div class="content">
+                    <table>
+                        <tr>
+                            <td width="138"><img src="https://gsbapps-qa.stanford.edu/commcenter/images/logo-email.png" /></td>
+                            <td><div class="main-heading">MyGSB Digest</div></td>
+                            <td align="right">
+                                <div class="header-date">
+                                    ${date}
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div><!-- /content -->
+
+            </td>
+            <td></td>
+        </tr>
+    </table><!-- /HEADER -->
+    <!-- HEADER -->
+    <table class="head-wrap" bgcolor="#8C1515">
+        <tr>
+            <td></td>
+            <td class="header container">
+                <!-- /content -->
+                <div class="content heading-second-content1">
+                    <table bgcolor="#8C1515">
+                        <tr>
+                            <td align="center" class="heading-second divider-black">${audience}</td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- /content -->
+                <!-- /content -->
+                <div class="heading-second-content2">
+                    <table bgcolor="#8C1515" style="width: 100%">
+                        <tr>
+                            <td class="left-section">
+                                <table>
+                                    <tr>
+                                        <td>Jump To : </td>
+                                        <td class="border-right"><a href="#deadline">Deadlines</a></td>
+                                        <td class="border-right"><a href="#announcement">Announcements</a></td>
+                                        <td><a href="#event">Events</a></td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td class="right-section">
+                            </td>
+                        </tr>
+                    </table>
+
+                </div><!-- /content -->
+
+            </td>
+            <td></td>
+        </tr>
+    </table><!-- /HEADER -->
+    <!-- BODY -->
+    <table class="body-wrap" bgcolor="">
+        <tr>
+            <td class="container" bgcolor="#FFFFFF">
+                <!-- content -->
+                <div class="content">
+                    ${header_end}
+
+
+                    ${deadline_title_start}
+                    <div class="section-container">
+                        <a name="deadline" style="position: absolute; margin-top: 15px;"></a>
+                        <table class="info-type" style="padding: 12px 0px;">
+                            <tbody>
+                                <tr>
+                                    <td class="column column-2">
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                            <tr>
+                                                <td class="subheading">
+                                                    Deadlines
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    ${deadline_title_end}
+
+
+                    ${deadline_detail_start}
+                    <div class="section-container">
+                        <table class="message">
+                            <tbody>
+                                <tr>
+                                    <td class="card">
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                            <tr>
+                                                <td>
+                                                    <table class="calendar">
+                                                        <tr>
+                                                            <td><span style="font-size: 40px;font-style: normal;font-weight: 600;line-height: 40px;">${day}</span></td>
+                                                            <td>
+                                                                <span style="font-size: 14px;font-style: normal;font-weight: 700;line-height: 16px;">
+                                                                    <b>${month}</b><br />
+                                                                </span>
+                                                                <span style="font-size: 14px;font-style: normal;font-weight: 400;line-height: 16px;">${day_of_week}</span>
+                                                            </td>
+                                                            <td>
+                                                                <div class="add-time"><div style="float: left;margin: 0 8px 0 24px;"><img src="https://gsbapps-qa.stanford.edu/commcenter/images/clock-icon.png" width="16" height="16" style="margin-top: 3px" /></div><div style="float: left; margin-top: 3px">${time_start}</div></div><div class="clear"></div>
+                                                                <div class="add-to-calendar"><div style="float: left;margin: 0 8px 0 24px;"><a href="https://gsbapps-qa.stanford.edu/commcenter/public/addtooutlook.aspx?key=${add_to_calendar_params}">Add to Calendar</a></div><div style="float:left"><a href="https://gsbapps-qa.stanford.edu/commcenter/public/addtooutlook.aspx?key=${add_to_calendar_params}"><img src="https://gsbapps-qa.stanford.edu/commcenter/images/add-calendar.png" width="16" height="16" style="margin-top: 3px" /></a></div></div>
+                                                                <div class="clear"></div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <table class="message-card-content" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                            <tr>
+                                                <td>
+                                                    <div class="card-title">
+                                                        ${title}
+                                                    </div>
+                                                    <div class="card-content">
+                                                        ${description}
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    ${deadline_detail_end}
+
+
+                    ${announce_title_start}
+                    <div class="section-container">
+                        <a name="announcement" style="position: absolute; margin-top: 15px;"></a>
+                        <table class="info-type" style="display: flex; padding: 12px 0px; flex-direction: column; align-items: flex-start; gap: 12px; align-self: stretch;">
+                            <tbody>
+                                <tr>
+                                    <td class="column column-2">
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="subheading">
+                                                        Announcements
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    ${announce_title_end}
+
+
+                    ${announce_detail_start}
+                    <div class="section-container">
+                        <table class="message" style="border-radius: 8px; border: 1px solid rgba(213, 213, 212, 1); background: var(--white, #FFF); margin-bottom: 12px; width: 100%;" width="100%">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <table class="message-card-content" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="card-title" style="color: #00548F; font-family: Source Sans Pro; font-size: 18px; font-style: normal; font-weight: 600; line-height: 24px; padding: 12px 16px 12px 16px;">
+                                                            ${title}
+                                                        </div>
+                                                        <div class="card-content" style="border-top: 1px solid #D5D5D4;">
+                                                            ${description}
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    ${announce_detail_end}
+
+
+                    ${event_title_start}
+                    <div class="section-container">
+                        <a name="event" style="position: absolute; margin-top: 15px;"></a>
+                        <table class="info-type" style="padding: 12px 0px;">
+                            <tbody>
+                                <tr>
+                                    <td class="column column-2">
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                            <tr>
+                                                <td class="subheading">
+                                                    Events
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    ${event_title_end}
+
+
+                    ${event_detail_reg_start}
+                    <table class="message">
+                        <tbody>
+                            <tr>
+                                <td class="card">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                        <tr>
+                                            <td>
+                                                <table class="calendar calendar-long">
+                                                    <tr>
+                                                        <td><span style="font-size: 40px;font-style: normal;font-weight: 600;line-height: 40px;">${day_start}</span></td>
+                                                        <td>
+                                                            <span style="font-size: 14px;font-style: normal;font-weight: 700;line-height: 16px;">
+                                                                <b>${month_start}</b><br />
+                                                            </span>
+                                                            <span style="font-size: 14px;font-style: normal;font-weight: 400;line-height: 16px;">${day_of_week_start}</span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="add-time">
+                                                                <div style="float: left;margin: 0 8px 0 24px;"><img src="https://gsbapps-qa.stanford.edu/commcenter/images/clock-icon.png" width="16" height="16" style="margin-top: 3px" /></div><div style="float: left; margin-top: 3px">
+                                                                    ${time_start} - ${time_end}
+                                                                </div>
+                                                            </div><div class="clear"></div>
+                                                            <div class="add-to-calendar"><div style="float: left;margin: 0 8px 0 24px;"><a href="https://gsbapps-qa.stanford.edu/commcenter/public/addtooutlook.aspx?key=${add_to_calendar_params}">Add to Calendar</a></div><div style="float:left"><a href="https://gsbapps-qa.stanford.edu/commcenter/public/addtooutlook.aspx?key=${add_to_calendar_params}"><img src="https://gsbapps-qa.stanford.edu/commcenter/images/add-calendar.png" width="16" height="16" style="margin-top: 3px" /></a></div></div>
+                                                            <div class="clear"></div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <table class="message-card-content" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                        <tr>
+                                            <td>
+                                                <div class="card-title">${title}</div>
+                                                <div class="card-from">
+                                                    <span><img src="https://gsbapps-qa.stanford.edu/commcenter/images/person.png"></span>${sponsors}
+                                                </div>
+                                                <div class="card-location">
+                                                    <span><img src="https://gsbapps-qa.stanford.edu/commcenter/images/location.png"></span>${location}
+                                                </div>
+                                                <div class="card-content">
+                                                    ${description}
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    ${event_detail_reg_end}
+
+
+                    ${event_detail_all_start}
+                    <table class="message">
+                        <tbody>
+                            <tr>
+                                <td class="card">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                        <tr>
+                                            <td>
+                                                <table class="calendar">
+                                                    <tr>
+                                                        <td><span style="font-size: 40px;font-style: normal;font-weight: 600;line-height: 40px;">${day_start}</span></td>
+                                                        <td>
+                                                            <span style="font-size: 14px;font-style: normal;font-weight: 700;line-height: 16px;">
+                                                                <b>${month_start}</b><br />
+                                                                <span style="font-size: 14px;font-style: normal;font-weight: 400;line-height: 16px;">${day_of_week_start}</span>
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <div class="add-time"><div style="float: left;margin: 0 8px 0 24px;"><img src="https://gsbapps-qa.stanford.edu/commcenter/images/clock-icon.png" width="16" height="16" style="margin-top: 3px" /></div><div style="float: left; margin-top: 3px">All Day</div></div><div class="clear"></div>
+                                                            <div class="add-to-calendar"><div style="float: left;margin: 0 8px 0 24px;"><a href="https://gsbapps-qa.stanford.edu/commcenter/public/addtooutlook.aspx?key=${add_to_calendar_params}">Add to Calendar</a></div><div style="float:left"><a href="https://gsbapps-qa.stanford.edu/commcenter/public/addtooutlook.aspx?key=${add_to_calendar_params}"><img src="https://gsbapps-qa.stanford.edu/commcenter/images/add-calendar.png" width="16" height="16" /></a></div></div>
+                                                            <div class="clear"></div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <table class="message-card-content" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                        <tr>
+                                            <td>
+                                                <div class="card-title">${title}</div>
+                                                <div class="card-from">
+                                                    <span><img src="https://gsbapps-qa.stanford.edu/commcenter/images/person.png"></span>${sponsors}
+                                                </div>
+                                                <div class="card-location">
+                                                    <span><img src="https://gsbapps-qa.stanford.edu/commcenter/images/location.png"></span>${location}
+                                                </div>
+                                                <div class="card-content">
+                                                    ${description}
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    ${event_detail_all_end}
+
+
+                    ${event_detail_multi_start}
+                    <table class="message">
+                        <tbody>
+                            <tr>
+                                <td class="card">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                        <tr>
+                                            <td>
+                                                <div class="calendar calendar-dv-wrapper">
+                                                    <div>
+                                                        <div class="calendar-dv"><span style="font-size: 40px;font-style: normal;font-weight: 600;line-height: 40px;">${day_start}</span></div>
+                                                        <div class="calendar-dv">
+                                                            <span style="font-size: 14px;font-style: normal;font-weight: 700;line-height: 16px;">
+                                                                <b>${month_start}</b><br /></span>
+                                                                <span style="font-size: 14px;font-style: normal;font-weight: 400;line-height: 16px;">${day_of_week_start}</span>
+                                                        </div>
+                                                        <div class="calendar-dv"><span style="color:#767674; font-size: 14px; font-style: normal;  font-weight: 400; line-height: 16px;padding:12px">To</span></div>
+                                                        <div class="calendar-dv"><span style="font-size: 40px;font-style: normal;font-weight: 600;line-height: 40px;">${day_end}</span></div>
+                                                        <div class="calendar-dv">
+                                                            <span style="font-size: 14px;font-style: normal;font-weight: 700;line-height: 16px;">
+                                                                <b>${month_end}</b><br /></span>
+                                                                <span style="font-size: 14px;font-style: normal;font-weight: 400;line-height: 16px;">${day_of_week_end}</span>
+                                                        </div>
+                                                        <div class="calendar-dv calendar-dv-next">
+                                                            <div class="add-time"><div style="float: left;margin: 0 8px 0 24px;"><img src="https://gsbapps-qa.stanford.edu/commcenter/images/clock-icon.png" width="16" height="16" style="margin-top: 3px" /></div><div style="float: left; margin-top: 3px">All Day</div></div><div class="clear"></div>
+                                                            <div class="add-to-calendar"><div style="float: left;margin: 0 8px 0 24px;"><a href="https://gsbapps-qa.stanford.edu/commcenter/public/addtooutlook.aspx?key=${add_to_calendar_params}">Add to Calendar</a></div><div style="float:left"><a href="https://gsbapps-qa.stanford.edu/commcenter/public/addtooutlook.aspx?key=${add_to_calendar_params}"><img src="https://gsbapps-qa.stanford.edu/commcenter/images/add-calendar.png" width="16" height="16" /></a></div></div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <table class="message-card-content" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                        <tr>
+                                            <td>
+                                                <div class="card-title">${title}</div>
+                                                <div class="card-from">
+                                                    <span><img src="https://gsbapps-qa.stanford.edu/commcenter/images/person.png"></span>${sponsors}
+                                                </div>
+                                                <div class="card-location">
+                                                    <span><img src="https://gsbapps-qa.stanford.edu/commcenter/images/location.png"></span>${location}
+                                                </div>
+                                                <div class="card-content">
+                                                    ${description}
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    ${event_detail_multi_end}
+
+
+                    ${footer_start}
+                </div>
+            </td>
+        </tr>
+    </table><!-- /BODY -->
+    <!-- FOOTER -->
+    <table class="footer-wrap">
+        <tr>
+            <td></td>
+            <td class="footer-container">
+                <table style="margin: auto; max-width: 1100px; width: 100%">
+                    <tr>
+                        <td width="40%"><img src="https://gsbapps-qa.stanford.edu/commcenter/images/logo-email.png" /></td>
+                        <td>
+                            <div>Questions? Contact the Stanford MSx Program at</div>
+                            <div><a href="mailto:StanfordMSx@stanford.edu">StanfordMSx@stanford.edu</a> or <a href="tel:+1.650.723.2149">+1.650.723.2149</a></div>
+                            <br />
+                            <div>Visit <a href="https://mygsb-dev.stanford.edu">MyGSB</a> for complete information about deadlines, housing, financial aid, and much more.</div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td></td>
+        </tr>
+    </table><!-- /FOOTER -->
+</body>
+</html>
+${footer_end}

@@ -19,8 +19,6 @@ public class Audience
     private const string AUDIENCE_GROUP_MSX = "msx";
     private const string AUDIENCE_GROUP_STUDENT = "student";
 
-    //private DAL _dal;
-
     private int? _id;
     private string _type;
     private string _name;
@@ -44,14 +42,14 @@ public class Audience
     //private string _audClass;
     //private string _date_modified_source;
     private string _createdBy;
-    private string _audCode;  
+    private string _audCode;
     private string _audType;
-    private int _audIsActive;    
+    private int _audIsActive;
     private int _organization_id;
     private string _modified_by;
     private string _modified_Date;
     private string _addToOutlook;
-    //private TextManager _textManager;
+
 
     #endregion
 
@@ -60,24 +58,13 @@ public class Audience
     /// Message audience
     /// </summary>
     public Audience()
-	{
-        //_dal = new DAL();
-        //_textManager = new TextManager();
+    {
+
     }
 
     public Audience(string audienceType)
     {
-        //_dal = new DAL();
-       // _textManager = new TextManager();
-       // SqlDataReader rd = _dal.GetAudienceByType(audienceType);
 
-        //if (rd.HasRows)
-        //{
-        //    rd.Read();
-        //    SetProperties(rd);
-        //}
-
-        //rd.Close();
     }
 
     /// <summary>
@@ -86,8 +73,6 @@ public class Audience
     /// <param name="dr">Audience data reader</param>
     public Audience(SqlDataReader dr)
     {
-       // _dal = new DAL();
-        //_textManager = new TextManager();
         SetProperties(dr);
     }
     #endregion
@@ -223,7 +208,7 @@ public class Audience
             if (IsAdmit && IsMSx) _isMSxAdmit = true;
             return _isMSxAdmit;
         }
-    }    
+    }
 
     /// <summary>
     /// Audience Active or not
@@ -249,17 +234,6 @@ public class Audience
         get { return _audName; }
         set { _audName = value; }
     }
-
-
-    //public bool IsAudienceRestricted
-    //{
-    //    get
-    //    {
-    //        _isAudienceRestricted = !(AudienceManager.GetAudiencePrivilegeGroup(Auth.GetCurrentUserUnivid()).Contains(
-    //            _textManager.GetContentWithCache("ed_audience_auth_workgroup", Constants.APPLICATION_DEPENDENCE_CACHE_KEY)));
-    //        return _isAudienceRestricted;
-    //    }
-    //}
 
     /// <summary>
     /// Audience Admit Round
@@ -292,7 +266,7 @@ public class Audience
     {
         get { return _audCode; }
         set { _audCode = value; }
-    }   
+    }
 
     public string AudienceType
     {
@@ -330,7 +304,7 @@ public class Audience
         }
         set { _isStudent = value; }
     }
-  
+
     /// <summary>
     /// Add to Outlook trigger
     /// </summary>

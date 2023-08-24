@@ -32,13 +32,15 @@
                 <td class="auto-style3">Audience</td>
                 <td class="auto-style5">
                     <select id="audience" name="D1" runat="server">
-                        <option>MBA Class of 2024</option>
-                        <option>MBA Class of 2025</option>
-                        <option>MBA 2025 Admit Round 1</option>
-                        <option>MBA 2025 Admit Round 2</option>
-                        <option>MBA 2025 Admit Round 3</option>
-                        <option>MSx 2024</option>
-                        <option>MSx 2024 Admit</option>
+                        <option value="MBA2024">MBA Class of 2024</option>
+                        <option value="MBA2025">MBA Class of 2025</option>
+                        <option value="MBAAdmitR12025">MBA 2025 Admit Round 1</option>
+                        <option value="MBAAdmitR22025">MBA 2025 Admit Round 2</option>
+                        <option value="MBAAdmitR32025">MBA 2025 Admit Round 3</option>
+                        <option value="MSx2024">MSx 2024</option>
+                        <option value="MSxAdmit2024">MSx 2024 Admit</option>
+                        <option value="phd">PhD</option>
+                        <option value="phdAdmit">PhD Admit</option>
                     </select></td>
             </tr>
             <tr>
